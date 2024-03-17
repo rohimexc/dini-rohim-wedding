@@ -109,10 +109,11 @@
       <div class="card text-center">
         
         <div class="card-body">
-          <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+          <h3>The Wedding of</h3>
           <h1>Dini dan Rohim</h1>
-          <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-          <div class="simply-countdown"></div>
+          <h4>Kepada Yth.<span>Bapak/Ibu/Saudara/i, </span></h4>
+          <h3>Di Tempat</h3>
+          
           
           <a href="#home" id="luffy-button" class="btn btn-lg mt-4" onClick="enableScroll()">
             <div class="button-content">
@@ -152,31 +153,43 @@
 
   </section>
 
-  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
-    <div class="container" data-aos="fade-up">
-      <a class="navbar-brand" href="#">Himyun</a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Himyun</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<nav class="navbar navbar-expand-md bg-transparent mynavbar">
+    <div class="container d-block d-md-none" data-aos="fade-up">
+      <div class="nav nav-pills">
+        <a class="nav-link" href="#home"><i class="bi bi-house-heart"></i></a>
+        <a class="nav-link" href="#info"><i class="bi bi-megaphone"></i></a>
+        <a class="nav-link" href="#story"><i class="bi bi-clock-history"></i></a>
+        <a class="nav-link" href="#gallery"><i class="bi bi-camera"></i></a>
+        <a class="nav-link" href="#rsvp"><i class="bi bi-postcard-heart"></i></a>
+        <a class="nav-link" href="#gifts"><i class="bi bi-box2-heart"></i></a>
+        
+    </div>
+    </div>
+    <div class="container d-none d-md-flex" data-aos="fade-up">
+        <a class="navbar-brand" href="#">Himyun</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Himyun</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="navbar-nav ms-auto nav-pills">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#info">Info</a>
+                    <a class="nav-link" href="#story">Story</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#rsvp">RSVP</a>
+                    <a class="nav-link" href="#gifts">Gifts</a>
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#info">Info</a>
-            <a class="nav-link" href="#story">Story</a>
-            <a class="nav-link" href="#gallery">Gallery</a>
-            <a class="nav-link" href="#rsvp">RSVP</a>
-            <a class="nav-link" href="#gifts">Gifts</a>
-          </div>
-        </div>
-      </div>
     </div>
   </nav>
+
 
   <section id="home" class="home">
     <div class="sakura-left"><img src="img/sakura-left.png" data-aos="fade-right" data-aos-delay="200" alt=""></div>
@@ -186,7 +199,10 @@
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <h2>Acara Pernikahan</h2>
-          <h3>Diselenggarakan pada tanggal 02 Juni 2024</h3>
+          <p>Kami akan melangsungkan resepsi pernikahan dalam:</p>
+          <div class="simply-countdown mb-2"></div>
+          <h3>02 Juni 2024 M/25 Dzulqaidah 1445 H</h3>
+          <a type="button" class="btn btn-outline-pink" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=N3FzYm01NmtuYnY3ZXEyZTZlc29xZjB2a3Qgcm9oaW1leGNlbGxlbnQ1OTE4QG0&amp;tmsrc=rohimexcellent5918%40gmail.com"><i class="bi bi-bell"></i>Ingatkan Saya</a>
           <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir
             pada acara pernikahan kami. </p>
         </div>
@@ -553,14 +569,17 @@
 
   <script>
     const stickyTop = document.querySelector('.sticky-top');
+    const fixedBottom = document.querySelector('.fixed-bottom');
     const offcanvas = document.querySelector('.offcanvas');
 
     offcanvas.addEventListener('show.bs.offcanvas', function () {
       stickyTop.style.overflow = 'visible';
+      fixedBottom.style.overflow = 'visible';
     });
 
     offcanvas.addEventListener('hidden.bs.offcanvas', function () {
       stickyTop.style.overflow = 'hidden';
+      fixedBottom.style.overflow = 'hidden';
     });
 
   </script>
@@ -591,7 +610,7 @@
     }
 
     function playAudio() {
-      song.volume = 0.1;
+      song.volume = 0.5;
       audioIconWrapper.style.display = 'flex';
       song.play();
       isPlaying = true;
@@ -654,35 +673,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <div id="sakura"></div>
-  <script>
-    const sections = document.querySelectorAll('.story, .gifts, .home, .rsvp, .gallery');
-    sections.forEach(section => {
-      const sakuraContainer = document.createElement('div');
-      sakuraContainer.classList.add('sakura-container');
-      section.appendChild(sakuraContainer);
-    });
-
-    function createSakura(container) {
-      const sakura = document.createElement('div');
-      sakura.classList.add('sakura');
-      sakura.style.left = Math.random() * window.innerWidth + 'px';
-      sakura.style.animationDuration = Math.random() * 10 + 10 + 's';
-      container.appendChild(sakura);
-
-      sakura.addEventListener('animationend', () => {
-        sakura.remove();
-      });
-    }
-
-    setInterval(() => {
-      const containers = document.querySelectorAll('.sakura-container');
-      containers.forEach(container => {
-        createSakura(container);
-      });
-    }, 300);
-
-  </script>
+  
 </body>
 
 </html>
