@@ -18,7 +18,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 50%;
   color: white;
-  transition: filter 0.3s, transform 0.3s; /* Efek transisi untuk perubahan warna teks, filter, dan transformasi gambar */
+  transition: transform 0.3s ease; /* Efek transisi untuk perubahan warna teks, filter, dan transformasi gambar */
 }
 
 .simply-countdown > .simply-section:hover {

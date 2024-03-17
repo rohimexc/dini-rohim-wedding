@@ -502,7 +502,6 @@ body {
   visibility: hidden;
   transition: 0.1s;
   
-  
 }
 .home .card .heart{
   width: 50px;
@@ -583,6 +582,7 @@ body {
   position: relative;
   color: black;
   padding-top: 10rem;
+
   overflow: hidden;
 }
 
@@ -615,73 +615,6 @@ body {
   animation: goyangLeft 2s ease-in-out infinite;
 }
 
-.info .card-maps{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 430px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 35px 80px rgba(0,0,0,0,0.15);
-  transition: 0.5s;
-  margin-top: 3rem;
-  border: 1px solid #f14e95;
-}
-
-.info .card-maps .alamat{
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.info .card-maps:hover .alamat{
-  display: none;
-}
-
-.info .card-maps:hover{
-  height: 400px;
-}
-.info .card-maps iframe {
-  position: absolute;
-  width: 95%;
-  height: 330px;
-  top: 40px;
-  border-radius: 12px;
-  background: #fff;
-  transition: 0.5s;
-  border: 1px solid #f14e95;
-}
-.info .card-maps:hover iframe {
-  top: -50px;
-  scale: 0.9;
-  box-shadow: 0 35px 80px rgba(0,0,0,0,0.2);
-}
-  
-.info .card-maps .content{
-  position: absolute;
-  bottom: 0.3rem;
-  width: 100%;
-  height: 2.3rem;
-  padding: 0 30px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.info .card-maps:hover .content{
-  height: 8rem;
-  scale: 0.95;
-}
-
-.info .card-maps .content a{
-  margin-top: 0.1rem;
-  margin-bottom: 1rem;
-  transition: 0.5s;
-}
 
 
 
@@ -733,38 +666,334 @@ body {
   }
 }
 
-.info .description {
-  font-size: 1rem;
-  font-weight: 300;
+.info .card.akad{
+  margin-top: 5rem;
+  position: relative;
+  width: 60%;
+  max-height: 600px;
+  min-height: 350px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(255,255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255,255, 255, 0.5);
+  border-radius: 15px;
 }
-
-.info .card {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-  color: black !important;
-  border: 1px solid var(--pink);
+.info .card.akad .box{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255,255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all ease-in-out 0.4s;
 }
 
-.info .card:hover{
-  transform: translateY(-10px);
-  box-shadow: 0px 0 60px 0 rgba(var(--pink), 0.5);
+.info .card.akad:hover .box{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg, #f14e95, rgba(252, 85, 182,0.5));
 }
 
-.info .card-header {
-  border-bottom: 1px solid white;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+.info .card.akad .box ::before {
+  background-image: url(img/kiri-atas.png);
+  background-size: 150px 150px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 0;
+  top:0;
+  content: "";
 }
 
-.info .card-body {
+.info .card.akad .box ::after {
+  background-image: url(img/kanan-bawah.png);
+  background-size: 150px 150px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  right: 0;
+  bottom:0;
+  content: "";
+}
+
+.info .card.akad .box .content p.alamat{
+  padding-top: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 7%;
+  font-size: 0.9rem;
+}
+
+.info .card.akad .box .content h2{
+  font-size: 3rem;
+}
+
+.info .card.akad .box .content p{
+  margin-bottom: 0;
   font-size: 1rem;
 }
 
-.info .card-footer {
-  border-top: 1px solid white;
-  font-size: 0.9rem;
-  font-weight: 300;
+.info .card.akad .box .content .day{
+  font-size: 2rem;
+  font-weight: 600;
+  border-right: 2px solid var(--pink);
+  border-left: 2px solid var(--pink);
 }
+.info .card.akad .box .content .time{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.info .card.akad:hover .box .content, 
+.info .card.akad:hover .box .content h2{
+  color: #fff;
+}
+.info .card.akad:hover .box .content .day{
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.info .card.akad:hover .box ::after, .info .card.akad:hover .box ::before{
+  filter: opacity(60%)
+}
+
+.info .card.akad .clock{
+  height: 6.25rem;
+  width: 6.25rem;
+  background: url(img/clock.png) no-repeat;
+  background-size: cover;
+  border: 0.3125rem solid transparent;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ccc,
+              -3px -3px 5px #fff,
+              3px 3px 5px #ccc inset,
+              -3px -3px 5px #fff inset;
+  transition: all ease-in-out 0.4s;
+  position: absolute;
+  bottom: 1.8rem; /* 10px in rem */
+  left: 1.8rem;
+}
+
+.info .card.akad .clock::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f0f0f0;
+  height: 0.4375rem;
+  width: 0.4375rem;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ccc,
+              -3px -3px 5px #fff,
+              3px 3px 5px #ccc inset,
+              -3px -3px 5px #fff inset;
+}
+
+.info .card.akad .clock .second{
+  position: absolute;
+  top: 0.9375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2.5rem;
+  width: 0.1875rem;
+  background: #ff7675;
+  border-radius: 100% 100% 5px 5px;
+  z-index: 9;
+
+}
+
+.info .card.akad .clock .minute{
+  position: absolute;
+  top: 0.9375rem;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(300deg);
+  height: 2.5rem;
+  width: 0.2rem;
+  background: #74b9ff;
+  border-radius: 50%;
+  z-index: 8;
+  transform-origin: 50% 75%;
+
+}
+
+.info .card.akad:hover .clock{
+  bottom: 8rem; /* 10px in rem */
+  left: 3rem;
+  background-color: #fff;
+}
+
+.info .card.resepsi{
+  margin-top: 4.2rem;
+  position: relative;
+  width: 60%;
+  max-height: 600px;
+  min-height: 350px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(255,255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255,255, 255, 0.5);
+  border-radius: 15px;
+}
+.info .card.resepsi .box{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255,255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.4s;
+}
+
+.info .card.resepsi:hover .box{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg, #f14e95, rgba(252, 85, 182,0.5));
+}
+
+.info .card.resepsi .box ::before {
+  background-image: url(img/kiri-atas.png);
+  background-size: 150px 150px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 0;
+  top:0;
+  content: "";
+}
+
+.info .card.resepsi .box ::after {
+  background-image: url(img/kanan-bawah.png);
+  background-size: 150px 150px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  right: 0;
+  bottom:0;
+  content: "";
+}
+
+.info .card.resepsi .box .content p.alamat{
+  padding-top: 2%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 7%;
+  font-size: 0.9rem;
+}
+
+.info .card.resepsi .box .content h2{
+  font-size: 3rem;
+}
+
+.info .card.resepsi .box .content p{
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.info .card.resepsi .box .content .day{
+  font-size: 2rem;
+  font-weight: 600;
+  border-right: 2px solid var(--pink);
+  border-left: 2px solid var(--pink);
+}
+.info .card.resepsi .box .content .time{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.info .card.resepsi:hover .box .content, 
+.info .card.resepsi:hover .box .content h2{
+  color: #fff;
+}
+.info .card.resepsi:hover .box .content .day{
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.info .card.resepsi:hover .box ::after, .info .card.resepsi:hover .box ::before{
+  filter: opacity(60%)
+}
+
+.info .card.resepsi .clock{
+  height: 6.25rem;
+  width: 6.25rem;
+  background: url(img/clock.png) no-repeat;
+  background-size: cover;
+  border: 0.3125rem solid transparent;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ccc,
+              -3px -3px 5px #fff,
+              3px 3px 5px #ccc inset,
+              -3px -3px 5px #fff inset;
+
+  transition: all ease-in-out 0.4s;
+  position: absolute;
+  bottom: 1.8rem; /* 10px in rem */
+  left: 1.8rem;
+}
+
+.info .card.resepsi .clock::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f0f0f0;
+  height: 0.4375rem;
+  width: 0.4375rem;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ccc,
+              -3px -3px 5px #fff,
+              3px 3px 5px #ccc inset,
+              -3px -3px 5px #fff inset;
+}
+
+.info .card.resepsi .clock .second{
+  position: absolute;
+  top: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(180deg);
+  height: 2.5rem;
+  width: 0.1875rem;
+  background: #ff7675;
+  border-radius: 100% 100% 5px 5px;
+  z-index: 9;
+
+}
+
+.info .card.resepsi .clock .minute{
+  position: absolute;
+  top: 0.9375rem;
+  left: 50%;
+  transform: translateX(-50%) rotateZ(225deg);
+  height: 2.5rem;
+  width: 0.2rem;
+  background: #74b9ff;
+  border-radius: 50%;
+  z-index: 8;
+  transform-origin: 50% 75%;
+
+}
+
+.info .card.resepsi:hover .clock{
+  bottom: 8rem; /* 10px in rem */
+  left: 3rem;
+  background-color: #fff;
+}
+
+
 .btn-outline-pink {
   color: #f14e95; /* Warna teks */
   border-color: #f14e95; /* Warna border */
