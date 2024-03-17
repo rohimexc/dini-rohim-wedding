@@ -64,6 +64,15 @@ body {
     transform: translateY(-60px);
   }
 }
+
+@keyframes iconGetar{
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
 .kapal-luffy {
   position: absolute;
   bottom: 0;
@@ -189,7 +198,7 @@ body {
 
 
 .hero h1,
-.hero h4,
+.hero h4,h3,
 .hero p {
   
   color: #f14e95;
@@ -219,7 +228,7 @@ body {
   color: white;
 }
 
-.hero h4:hover, .hero h1:hover, .hero p:hover{
+.hero h4:hover,.hero h3:hover, .hero h1:hover, .hero p:hover{
   color:#0a0a0a
 }
 
@@ -770,6 +779,27 @@ body {
 .btn-outline-pink:hover img {
   filter: brightness(0) invert(1); /* Mengubah warna gambar menjadi putih */
 }
+
+.btn-pink {
+  color: #fff; /* Warna teks */
+  border-color: #fff;
+  background-color: #f14e95; /* Warna border */
+}
+
+.btn-pink:hover {
+  color: var(--pink); /* Warna teks saat hover */
+  background-color: #fff; /* Warna background saat hover */
+  border-color: var(--pink); /* Warna border saat hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+  
+
+
+
+.btn-pink:hover img {
+  filter: brightness(0) invert(1); /* Mengubah warna gambar menjadi putih */
+}
+
 .btn-group-vertical .btn {
   display: flex;
   align-items: center;
