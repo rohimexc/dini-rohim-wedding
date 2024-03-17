@@ -271,7 +271,7 @@ body {
   background-attachment: fixed;
   margin-top: 0;
   margin-bottom: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .border-pink{
@@ -601,6 +601,35 @@ body {
   padding-top: 10rem;
 }
 
+.info img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 200px;
+  max-width: 25%;
+  position: absolute;
+}
+
+.info img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 200px;
+  max-width: 25%;
+  position: absolute;
+  
+}
+.info img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.info img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
+}
+
 .info .card-maps{
   position: relative;
   display: flex;
@@ -786,9 +815,6 @@ body {
   padding-top: 10rem;
 }
 
-.gifts {
-  padding-bottom: 10rem;
-}
 
 .story span,
 .gallery span,
@@ -801,12 +827,83 @@ body {
   margin-bottom: 1rem;
 }
 
+.gifts {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.gifts img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 200px;
+  max-width: 25%;
+  position: absolute;
+}
+
+
+.gifts img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 200px;
+  max-width: 25%;
+  position: absolute;
+}
+
+.gifts img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.gifts img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
+}
+
 .story p,
 .gallery p,
 .rsvp p,
 .gifts p {
   font-size: 1rem;
   font-weight: 300;
+}
+
+
+.story{
+  position: relative;
+  overflow: hidden;
+}
+
+.story img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 250px;
+  max-width: 35%;
+  position: absolute;
+}
+
+
+.story img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 250px;
+  max-width: 35%;
+  position: absolute;
+}
+.story img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.story img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
 }
 
 .timeline {
@@ -977,9 +1074,75 @@ body {
   
 }
 
-.rsvp {
 
+.gallery{
   position: relative;
+  overflow: hidden;
+}
+
+.gallery img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 250px;
+  max-width: 35%;
+  position: absolute;
+}
+
+
+.gallery img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 250px;
+  max-width: 35%;
+  position: absolute;
+}
+
+.gallery img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.gallery img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
+}
+
+.rsvp {
+  overflow: hidden;
+  position: relative;
+}
+
+.rsvp img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 170px;
+  max-width: 30%;
+  position: absolute;
+}
+
+
+.rsvp img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  min-width: 170px;
+  max-width: 30%;
+  position: absolute;
+}
+
+.rsvp img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.rsvp img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
 }
 
 .rsvp h2 {
@@ -1057,7 +1220,7 @@ footer img.depan{
   align-items: center;
   z-index: 2;
   height: auto;
-  width: 50%;
+  width: 70%;
   margin-bottom: 6rem;
   position: relative;
 }
@@ -1066,7 +1229,7 @@ footer img.belakang{
   align-items: center;
   z-index: 1;
   height: auto;
-  width: 50%;
+  width: 70%;
   margin-bottom: 6rem;
   position: absolute;
 
