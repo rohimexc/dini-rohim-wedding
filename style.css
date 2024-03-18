@@ -198,7 +198,8 @@ body {
 
 
 .hero h1,
-.hero h4,h3,
+.hero h4,
+.hero h5,
 .hero p {
   
   color: #f14e95;
@@ -210,11 +211,14 @@ body {
 }
 
 .hero h4 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+.hero h5 {
+  font-size: 1.3rem;
 }
 
 .hero p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .hero a {
@@ -228,7 +232,7 @@ body {
   color: white;
 }
 
-.hero h4:hover,.hero h3:hover, .hero h1:hover, .hero p:hover{
+.hero h4:hover,.hero h3:hover, .hero h1:hover, .hero p:hover, .hero h5:hover{
   color:#0a0a0a
 }
 
@@ -337,7 +341,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 320px;
+  height: 300px;
   transition: 0.5s;
 }
 
@@ -346,7 +350,7 @@ body {
   bottom: 0;
   right: 50%;
   transform: translateX(60%);
-  height: 320px;
+  height: 300px;
   transition: 0.5s;
 
 }
@@ -433,12 +437,12 @@ body {
 
 .home .card img {
   left: 80%;
-  height: 360px;
+  height: 330px;
 }
 
 .home .card-right img {
   right: 85%;
-  height: 360px;
+  height: 330px;
 }
 
 .home .card .content {
@@ -454,12 +458,12 @@ body {
 }
 .home .card:hover img {
   left: 90%;
-  height: 380px;
+  height: 360px;
 }
 
 .home .card-right:hover img {
   right: 95%;
-  height: 380px;
+  height: 360px;
 }
 
 
@@ -534,8 +538,8 @@ body {
   left: 0; /* Mengatur posisi gambar di kanan */
   z-index: 1;
   height: auto;
-  max-width: 200px;
-  min-width: 40%;
+  max-width: 100px;
+  min-width: 37%;
 }
 .home .sakura-right img{
   position: absolute;
@@ -543,8 +547,8 @@ body {
   right: 0; /* Mengatur posisi gambar di kanan */
   z-index: 1;
   height: auto;
-  max-width: 200px;
-  min-width: 40%;
+  max-width: 100px;
+  min-width: 37%;
 }
 
 .home .sakura-right img {
@@ -591,8 +595,8 @@ body {
   left: 0;
   z-index: 2;
   height: auto;
-  min-width: 200px;
-  max-width: 25%;
+  max-width: 150px;
+  min-width: 25%;
   position: absolute;
 }
 
@@ -601,8 +605,8 @@ body {
   right: 0;
   z-index: 2;
   height: auto;
-  min-width: 200px;
-  max-width: 25%;
+  max-width: 150px;
+  min-width: 25%;
   position: absolute;
   
 }
@@ -1073,7 +1077,7 @@ body {
   left: 0;
   z-index: 2;
   height: auto;
-  min-width: 200px;
+  min-width: 180px;
   max-width: 25%;
   position: absolute;
 }
@@ -1084,7 +1088,7 @@ body {
   right: 0;
   z-index: 2;
   height: auto;
-  min-width: 200px;
+  min-width: 180px;
   max-width: 25%;
   position: absolute;
 }
@@ -1117,7 +1121,7 @@ body {
   left: 0;
   z-index: 2;
   height: auto;
-  min-width: 250px;
+  min-width: 190px;
   max-width: 35%;
   position: absolute;
 }
@@ -1128,7 +1132,7 @@ body {
   right: 0;
   z-index: 2;
   height: auto;
-  min-width: 250px;
+  min-width: 190px;
   max-width: 35%;
   position: absolute;
 }
@@ -1320,7 +1324,7 @@ body {
   left: 0;
   z-index: 2;
   height: auto;
-  min-width: 250px;
+  min-width: 200px;
   max-width: 35%;
   position: absolute;
 }
@@ -1331,7 +1335,7 @@ body {
   right: 0;
   z-index: 2;
   height: auto;
-  min-width: 250px;
+  min-width: 200px;
   max-width: 35%;
   position: absolute;
 }
@@ -1636,7 +1640,7 @@ footer li {
   .home .card .content h2,
   .home .card-right .content h2 {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 2rem;
   }
   .home .card .content a,
