@@ -673,7 +673,7 @@ body {
 .info .card.akad{
   margin-top: 5rem;
   position: relative;
-  width: 60%;
+  width: 85%;
   max-height: 600px;
   min-height: 350px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
@@ -836,7 +836,7 @@ body {
 .info .card.resepsi{
   margin-top: 4.2rem;
   position: relative;
-  width: 60%;
+  width: 85%;
   max-height: 600px;
   min-height: 350px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
