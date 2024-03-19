@@ -114,7 +114,7 @@
           <h5>Kepada Yth. Bapak/Ibu/Saudara(i)</h5>
           <h4><span>Bapak/Ibu/Saudara/i</span></h4>
           <h5>Di Tempat</h5>
-          <p>Mohon maaf apabila ada salah dalam penulisan nama atau gelar</p>
+          <p>Kami Mohon maaf apabila terdapat kesalahan dalam penulisan nama atau gelar</p>
           
           
           <a href="#home" id="luffy-button" class="btn btn-lg mt-4" onClick="enableScroll()">
@@ -309,7 +309,7 @@
                         <p class="alamat">Dusun Beringin, Desa Ginunggung, Kec. Galang, Tolitoli-Sulawesi Tengah</p>
                     </div>
                     
-                    <a href="https://maps.app.goo.gl/GLqy8vdstdFg8j8SA" type="button" target="_blank" class="btn btn-pink">lihat lokasi<a>
+                    <a href="https://maps.app.goo.gl/GLqy8vdstdFg8j8SA" type="button" target="_blank" class="btn btn-pink">Lihat Lokasi</a>
                 </div>
               </div>
               <div class="clock">
@@ -431,36 +431,39 @@
           <p>Konfirmasi kamu sangat berarti untuk suksesnya acara kami</p>
         </div>
       </div>
-
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
-        id="my-form">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama">
+      <div class="card-form align-items-center justify-content-center">
+        <div class="box">
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center p-3" method="POST"
+          action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
+          id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama">
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Pilih salah satu</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
           </div>
+          <div class="col-12">
+            <button class="btn btn-primary align-items-center"><i class="bi bi-send-plus"></i>Kirim</button>
+          </div>
+          </form>
         </div>
-        <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim</button>
-        </div>
-      </form>
+      </div>
 
       <div class="row justify-content-center mt-5" data-aos="fade-up">
         <div class="col-md-6">
@@ -598,7 +601,9 @@
     </audio>
 
     <div class="audio-icon-wrapper" style="display: none;">
-      <i class="bi bi-disc"></i>
+
+      <div class="tengkorak"></div>
+      <div class="tengkorak-close" style="display: none;"></div>
     </div>
   </div>
 
@@ -644,7 +649,7 @@
   <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
-    const audioIcon = document.querySelector('.audio-icon-wrapper i');
+    const audioIcon = document.querySelector('.audio-icon-wrapper div');
     const song = document.querySelector('#song');
     let isPlaying = false;
 
@@ -676,12 +681,12 @@
     audioIconWrapper.onclick = function () {
       if (isPlaying) {
         song.pause();
-        audioIcon.classList.remove('bi-disc');
-        audioIcon.classList.add('bi-pause-circle');
+        audioIcon.classList.remove('tengkorak');
+        audioIcon.classList.add('tengkorak-close');
       } else {
         song.play();
-        audioIcon.classList.add('bi-disc');
-        audioIcon.classList.remove('bi-pause-circle');
+        audioIcon.classList.add('tengkorak');
+        audioIcon.classList.remove('tengkorak-close');
       }
 
       isPlaying = !isPlaying;

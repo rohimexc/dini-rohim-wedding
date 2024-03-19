@@ -730,26 +730,26 @@ body {
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 7%;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .info .card.akad .box .content h2{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .info .card.akad .box .content p{
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .info .card.akad .box .content .day{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   border-right: 2px solid var(--pink);
   border-left: 2px solid var(--pink);
 }
 .info .card.akad .box .content .time{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -767,8 +767,8 @@ body {
 }
 
 .info .card.akad .clock{
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 8.25rem;
+  width: 8.25rem;
   background: url(img/clock.png) no-repeat;
   background-size: cover;
   border: 0.3125rem solid transparent;
@@ -887,32 +887,31 @@ body {
   bottom:0;
   content: "";
 }
-
 .info .card.resepsi .box .content p.alamat{
   padding-top: 2%;
   padding-left: 7%;
   padding-right: 7%;
   padding-bottom: 7%;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .info .card.resepsi .box .content h2{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .info .card.resepsi .box .content p{
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .info .card.resepsi .box .content .day{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   border-right: 2px solid var(--pink);
   border-left: 2px solid var(--pink);
 }
 .info .card.resepsi .box .content .time{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -930,8 +929,8 @@ body {
 }
 
 .info .card.resepsi .clock{
-  height: 6.25rem;
-  width: 6.25rem;
+  height: 8.25rem;
+  width: 8.25rem;
   background: url(img/clock.png) no-repeat;
   background-size: cover;
   border: 0.3125rem solid transparent;
@@ -1352,6 +1351,9 @@ body {
 .rsvp {
   overflow: hidden;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .rsvp img.kiri-atas{
@@ -1384,6 +1386,35 @@ body {
   animation: goyangLeft 2s ease-in-out infinite;
 }
 
+.rsvp .card-form{
+  margin-top: 1rem;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-height: 600px;
+  min-height: 300px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(255,255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255,255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.rsvp .card-form .box{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255,255, 255, 0.7);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.4s;
+}
 .rsvp h2 {
   font-size: 4.5rem;
 }
@@ -1505,19 +1536,42 @@ footer li {
   height: 4rem;
   font-size: 4rem;
   position: fixed;
-  bottom: 2.5rem;
+  bottom: 10%;
   right: 2rem;
   cursor: pointer;
-  color: white;
-  opacity: 0.5;
-  mix-blend-mode: difference;
+  color: var(--shadow);
+  opacity: 0.5; 
   animation: rotating 4s linear infinite;
   transform-origin: center;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 0;
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px solid #f0f0f0;
 }
+
+.tengkorak {
+  width: 100%; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  height: 100%; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  background-image: url('img/tengkorak.svg'); /* Ganti dengan path yang benar ke gambar SVG Anda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--shadow); /* Warna yang sama dengan fill SVG */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+}
+
+.tengkorak-close {
+  width: 100%; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  height: 100%; /* Sesuaikan ukuran dengan kebutuhan Anda */
+  background-image: url('img/tengkorak-close.svg'); /* Ganti dengan path yang benar ke gambar SVG Anda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--shadow); /* Warna yang sama dengan fill SVG */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+}
+
 
 @keyframes rotating {
   from {
