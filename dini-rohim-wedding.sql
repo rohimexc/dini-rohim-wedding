@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS form_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    jumlah INT NOT NULL,
+    status VARCHAR(255) NOT NULL
+);
