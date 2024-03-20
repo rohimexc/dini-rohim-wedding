@@ -628,7 +628,7 @@ body {
 }
 .home .sakura-right img{
   position: absolute;
-  top: 109%;
+  top: 107%;
   right: 0; /* Mengatur posisi gambar di kanan */
   z-index: 1;
   height: auto;
