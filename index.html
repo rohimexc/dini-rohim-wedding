@@ -475,6 +475,20 @@
             <button type="submit" class="btn btn-primary align-items-center"><i class="bi bi-send-plus"></i>Kirim</button>
           </div>
           </form>
+          <table border="1">
+            <tr>
+                <th>Nama</th>
+                <th>Jumlah</th>
+                <th>Status</th>
+            </tr>
+            <?php foreach ($data as $row): ?>
+                <tr>
+                    <td><?php echo $row['nama']; ?></td>
+                    <td><?php echo $row['jumlah']; ?></td>
+                    <td><?php echo $row['status']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+          </table>
 
           <script>
             function saveFormData(event) {
