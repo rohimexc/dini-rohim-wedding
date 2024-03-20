@@ -1547,9 +1547,9 @@ footer li {
   justify-content: center;
   align-items: center;
   line-height: 0;
-  border-radius: 50%;
+
   z-index: 10;
-  border: 2px solid #f0f0f0;
+
 }
 
 .tengkorak {
@@ -1559,7 +1559,7 @@ footer li {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--shadow); /* Warna yang sama dengan fill SVG */
-  border-radius: 50%; /* Membuat bentuk lingkaran */
+  
 }
 
 .tengkorak-close {
@@ -1569,7 +1569,7 @@ footer li {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--shadow); /* Warna yang sama dengan fill SVG */
-  border-radius: 50%; /* Membuat bentuk lingkaran */
+  
 }
 
 
