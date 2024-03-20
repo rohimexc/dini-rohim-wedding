@@ -12,8 +12,10 @@ if ($conn->connect_error) {
 $nama = $_POST["nama"];
 $jumlah = $_POST["jumlah"];
 $status = $_POST["status"];
+$pesan = $_POST["pesan"];
 
-$sql = "INSERT INTO form_data (nama, jumlah, status) VALUES ('$nama', $jumlah, '$status')";
+
+$sql = "INSERT INTO form_data (nama, jumlah, status, pesan) VALUES ('$nama', $jumlah, '$status', '$pesan')";
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil disimpan!";
 } else {
