@@ -307,6 +307,89 @@ body {
   font-weight: bold;
 }
 
+.home .ayat h2{
+  font-size: 2rem;
+}
+
+.home span.arab{
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+
+.home p.arti{
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.home .ayat h2:hover,.home span.arab:hover,.home p.arti:hover{
+  color: var(--pink);
+}
+
+.home .ayat .box{
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #D5637B;
+  padding: 3%;
+}
+
+.home .ayat {
+  position: relative;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+  background: #FFFAFB;
+  background-image: url('img/card-ayat.png');
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(255,255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255,255, 255, 0.5);
+  
+}
+
+@keyframes blowFlowerRight {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(1deg) translateX(1%); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes blowFlowerLeft {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(1deg) translateX(-1%); }
+  100% { transform: rotate(0); }
+}
+
+.home .ayat::before{
+  background-image: url(img/ayat-atas.png);
+  background-size: 18rem 18rem;
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  left: 0;
+  top:0;
+  content: "";
+  border-radius: 1.5rem;
+  animation: blowFlowerLeft 4s infinite;
+}
+
+.home .ayat::after{
+  background-image: url(img/ayat-bawah.png);
+  background-size: 18rem 18rem;
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  right: 0;
+  bottom: 0;
+  content: "";
+  border-radius: 1.5rem;
+  animation: blowFlowerRight 4s infinite;
+}
+
+
 .home .card {
   position: relative;
   width: 90%;
@@ -477,6 +560,8 @@ body {
   font-size: 1.1rem;
   color: #666;
 }
+
+
 
 .home .couple {
   margin-top: 100px;
@@ -1386,34 +1471,70 @@ body {
   animation: goyangLeft 2s ease-in-out infinite;
 }
 
-.rsvp .card-form{
-  margin-top: 1rem;
-  position: relative;
-  justify-items: center;
-  align-items: center;
+
+
+.rsvp .form .box{
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #D5637B;
+  padding: 3%;
   width: 100%;
-  max-height: 600px;
-  min-height: 300px;
+}
+
+.rsvp .form {
+  position: relative;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+  background: #FFFAFB;
+  background-image: url('img/card-ayat.png');
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
               inset -5px -5px 5px rgba(255,255, 255, 0.5),
               5px 5px 5px rgba(0, 0, 0, 0.05),
               -5px -5px 5px rgba(255,255, 255, 0.5);
-  border-radius: 15px;
+  
 }
 
-.rsvp .card-form .box{
+@keyframes blowFlowerRight {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(1deg) translateX(1%); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes blowFlowerLeft {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(1deg) translateX(-1%); }
+  100% { transform: rotate(0); }
+}
+
+.rsvp .form::before{
+  background-image: url(img/ayat-atas.png);
+  background-size: 18rem 18rem;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  background: rgba(255,255, 255, 0.7);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all ease-in-out 0.4s;
+  height: 18rem;
+  width: 18rem;
+  left: 0;
+  top:0;
+  content: "";
+  border-radius: 1.5rem;
+  animation: blowFlowerLeft 4s infinite;
+}
+
+.rsvp .form::after{
+  background-image: url(img/ayat-bawah.png);
+  background-size: 18rem 18rem;
+  position: absolute;
+  height: 18rem;
+  width: 18rem;
+  right: 0;
+  bottom: 0;
+  content: "";
+  border-radius: 1.5rem;
+  animation: blowFlowerRight 4s infinite;
 }
 .rsvp h2 {
   font-size: 4.5rem;
