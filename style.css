@@ -282,7 +282,7 @@ body {
 }
 .info, .story, .gifts, .home, .rsvp, .gallery, footer{
   background-image: url(img/bg-2.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin-top: 0;
