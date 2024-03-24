@@ -207,7 +207,7 @@ body {
 
 .hero h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .hero h4 {
@@ -389,6 +389,22 @@ body {
   animation: blowFlowerRight 4s infinite;
 }
 
+.home h3.text-salam{
+  font-style: italic;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5rem;
+}
+
+.home p.text-ridho{
+  padding-bottom: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+.home h3.text-salam:hover,.home p.text-ridho:hover{
+  color: var(--pink);
+}
 
 .home .card {
   position: relative;
@@ -1568,7 +1584,7 @@ text-align:right;
   background: #ffffff;
   display: inline-block;
   width: 100%;
-  padding: 0 0px 40px 0px;
+  padding: 0 0px 20px 0px;
   border: 1px solid #e8eef1;
 }
 .rsvp .job-box-filter a.filtsec {
@@ -1615,7 +1631,7 @@ Inbox Message Style
 .rsvp .inbox-message ul li {
   list-style: none;
   position: relative;
-  padding: 15px 20px;
+  padding: 10px 10px;
   border-bottom: 1px solid #e8eef1;
 }
 .rsvp .inbox-message ul li:hover, .inbox-message ul li:focus {
@@ -1623,18 +1639,18 @@ Inbox Message Style
 }
 .rsvp .inbox-message .message-avatar {
   position: absolute;
-  left: 30px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 .rsvp .message-avatar img {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 3.1rem;
+  height: 3.1rem;
   border-radius: 50%;
 }
 .rsvp .inbox-message .message-body {
-  margin-left: 40px;
+  margin-left: 3.6rem;
   font-size: 15px;
   color:#62748F;
 }
@@ -1642,13 +1658,14 @@ Inbox Message Style
   font-weight: 600;
   display:inline-block;
   color:#62748F;
-  margin: 0 0 7px 0;
+  margin: 8px 0 0 0;
   padding: 0;
 }
+
 .rsvp .message-body span {
   border-radius: 50px;
-  line-height: 14px;
-  font-size: 12px;
+  line-height: 13px;
+  font-size: 8px;
   color: #fff;
   font-style: normal;
   padding: 4px 10px;
