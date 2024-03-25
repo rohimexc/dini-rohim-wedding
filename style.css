@@ -239,9 +239,36 @@ body {
 
 .hero .card {
   background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid var(--pink);
+  border: 2px solid var(--pink);
+  animation: borderRotate 4s linear infinite;
 }
 
+
+@keyframes borderRotate {
+  /* 0%,100%{
+    border-style: inset;
+  }
+  50%{
+    border-style: outset;
+  } */
+  0%,100%{
+    border-left: 2px solid var(--pink);
+    border-right: 2px solid #03A9F4;
+  }
+  25%{
+    border-top: 2px solid var(--pink);
+    border-bottom: 2px solid #03A9F4;
+
+  }
+  50%{
+    border-right: 2px solid var(--pink);
+    border-left: 2px solid #03A9F4;
+  }
+  75%{
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid #03A9F4;
+  }
+}
 .hero .card:hover{
   background-color: rgba(255, 255, 255, 0.95) !important;
 }
