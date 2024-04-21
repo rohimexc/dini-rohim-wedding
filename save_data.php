@@ -9,11 +9,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$nama = $_POST["nama"];
-$jumlah = $_POST["jumlah"];
-$status = $_POST["status"];
+$nama = mysqli_real_escape_string($conn, $_POST["nama"]);
+$jumlah = mysqli_real_escape_string($conn, $_POST["jumlah"]);
+$status = mysqli_real_escape_string($conn, $_POST["status"]);
 
-$sql = "INSERT INTO form_data (nama, jumlah, status) VALUES ('$nama', $jumlah, '$status')";
+$sql = "INSERT INTO form_data (nama, jumlah, status) VALUES ('$nama', '$jumlah', '$status')";
+
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil disimpan!";
 } else {
