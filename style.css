@@ -2163,7 +2163,7 @@ footer li {
 }
 
 .carousel .carousel-item img{
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   border-radius: 20px;
   object-fit: cover;
