@@ -207,7 +207,7 @@ body {
 
 .hero h1 {
   font-family: 'Sacramento', cursive;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .hero h4 {
@@ -239,9 +239,36 @@ body {
 
 .hero .card {
   background-color: rgba(255, 255, 255, 0.8) !important;
-  border: 1px solid var(--pink);
+  border: 2px solid var(--pink);
+  animation: borderRotate 4s linear infinite;
 }
 
+
+@keyframes borderRotate {
+  /* 0%,100%{
+    border-style: inset;
+  }
+  50%{
+    border-style: outset;
+  } */
+  0%,100%{
+    border-left: 2px solid var(--pink);
+    border-right: 2px solid #03A9F4;
+  }
+  25%{
+    border-top: 2px solid var(--pink);
+    border-bottom: 2px solid #03A9F4;
+
+  }
+  50%{
+    border-right: 2px solid var(--pink);
+    border-left: 2px solid #03A9F4;
+  }
+  75%{
+    border-bottom: 2px solid var(--pink);
+    border-top: 2px solid #03A9F4;
+  }
+}
 .hero .card:hover{
   background-color: rgba(255, 255, 255, 0.95) !important;
 }
@@ -282,7 +309,7 @@ body {
 }
 .info, .story, .gifts, .home, .rsvp, .gallery, footer{
   background-image: url(img/bg-2.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin-top: 0;
@@ -389,6 +416,22 @@ body {
   animation: blowFlowerRight 4s infinite;
 }
 
+.home h3.text-salam{
+  font-style: italic;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.5rem;
+}
+
+.home p.text-ridho{
+  padding-bottom: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+}
+.home h3.text-salam:hover,.home p.text-ridho:hover{
+  color: var(--pink);
+}
 
 .home .card {
   position: relative;
@@ -1441,6 +1484,10 @@ body {
   display: flex;
 }
 
+.rsvp .box ul li.list-group-item{
+  justify-content: flex-start;
+}
+
 .rsvp img.kiri-atas{
   top: 0;
   left: 0;
@@ -1499,17 +1546,7 @@ body {
   
 }
 
-@keyframes blowFlowerRight {
-  0% { transform: rotate(0); }
-  50% { transform: rotate(1deg) translateX(1%); }
-  100% { transform: rotate(0); }
-}
 
-@keyframes blowFlowerLeft {
-  0% { transform: rotate(0); }
-  50% { transform: rotate(1deg) translateX(-1%); }
-  100% { transform: rotate(0); }
-}
 
 .rsvp .form::before{
   background-image: url(img/ayat-atas.png);
@@ -1521,7 +1558,6 @@ body {
   top:0;
   content: "";
   border-radius: 1.5rem;
-  animation: blowFlowerLeft 4s infinite;
 }
 
 .rsvp .form::after{
@@ -1534,7 +1570,157 @@ body {
   bottom: 0;
   content: "";
   border-radius: 1.5rem;
-  animation: blowFlowerRight 4s infinite;
+
+}
+
+.rsvp form{
+  z-index: 1000;
+}
+
+.rsvp .job-box-filter label {
+  width: 100%;
+}
+.rsvp .job-box-filter select.input-sm {
+  display: inline-block;
+  max-width: 120px;
+  margin: 0 5px;
+  border: 1px solid #e8eef1;
+  border-radius: 2px;
+  height: 34px;
+  font-size: 15px;
+}
+.rsvp .job-box-filter label input.form-control {
+  max-width: 200px;
+  display: inline-block;
+  border: 1px solid #e8eef1;
+  border-radius: 2px;
+  height: 34px;
+  margin-left:5px;
+  font-size: 15px;
+}
+.rsvp .text-right{
+text-align:right;
+}
+.rsvp .job-box-filter {
+  padding: 12px 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8eef1;
+  margin-bottom: 20px;
+}
+.rsvp .job-box {
+  background: #ffffff;
+  display: inline-block;
+  width: 100%;
+  padding: 0 0px 20px 0px;
+  border: 1px solid #e8eef1;
+}
+.rsvp .job-box-filter a.filtsec {
+  margin-top: 8px;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 4px 10px;
+  font-family: 'Quicksand', sans-serif;
+  transition: all ease 0.4s;
+  background: #edf0f3;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #81a0b1;
+  border: 1px solid #e2e8ef;
+}
+.rsvp .job-box-filter a.filtsec.active {
+  color: #ffffff;
+  background: #16262c;
+  border-color:#16262c;
+}
+.rsvp .job-box-filter a.filtsec i {
+  color: #03A9F4;
+  margin-right: 5px;
+}
+.rsvp .job-box-filter a.filtsec:hover, .job-box-filter a.filtsec:focus {
+  color: #ffffff;
+  background: #07b107;
+  border-color: #07b107;
+}
+.rsvp .job-box-filter a.filtsec:hover i, .job-box-filter a.filtsec:focus i{
+color:#ffffff;
+}
+.rsvp .job-box-filter h4 i {
+  margin-right: 10px;
+}
+
+/*=====================================
+Inbox Message Style
+=======================================*/
+.rsvp .inbox-message ul {
+  padding: 0;
+  margin: 0;
+}
+.rsvp .inbox-message ul li {
+  list-style: none;
+  position: relative;
+  padding: 10px 10px;
+  border-bottom: 1px solid #e8eef1;
+}
+.rsvp .inbox-message ul li:hover, .inbox-message ul li:focus {
+  background: #eff6f9;
+}
+.rsvp .inbox-message .message-avatar {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.rsvp .message-avatar img {
+  display: inline-block;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 50%;
+}
+.rsvp .inbox-message .message-body {
+  margin-left: 3.6rem;
+  font-size: 15px;
+  color:#62748F;
+}
+.rsvp .message-body-heading h5 {
+  font-weight: 600;
+  display:inline-block;
+  color:#62748F;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+.rsvp .message-body span {
+  border-radius: 50px;
+  line-height: 13px;
+  font-size: 8px;
+  color: #fff;
+  font-style: normal;
+  padding: 4px 10px;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+.rsvp .message-body span.unread{
+background:#07b107;	
+}
+.rsvp .message-body span.important{
+background:#dd2027;	
+}
+.rsvp .message-body span.pending{
+background:#2196f3;	
+}
+.rsvp .message-body-heading span {
+  float: right;
+  font-size: 1rem;
+}
+.rsvp .messages-inbox .message-body p {
+  margin: 0;
+  padding: 0;
+  line-height: 27px;
+  font-size: 15px;
+}
+
+.rsvp a:hover{
+  text-decoration:none;
 }
 .rsvp h2 {
   font-size: 4.5rem;
@@ -1843,6 +2029,19 @@ footer li {
   html {
     font-size: 60%;
   }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-prewed-vertical.png);
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+    /* filter: grayscale(); */
+  }
 
 
   .simply-countdown > .simply-section {
@@ -1941,6 +2140,7 @@ footer li {
     width: 100%;
     z-index: 1100;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -1949,5 +2149,6 @@ footer li {
     top: 0;
     z-index: 1100;
   }
+  
 }
 

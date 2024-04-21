@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Sesuaikan dengan username MySQL Anda
-$password = ""; // Sesuaikan dengan password MySQL Anda
+$username = "root";
+$password = "";
 $dbname = "dini-rohim-wedding";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -20,4 +20,6 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+
+echo json_encode($data); // Mengembalikan data dalam format JSON
 ?>

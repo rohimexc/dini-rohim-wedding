@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rohim dan Dini Wedding</title>
+  <title>Dini dan Rohim Wedding</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -115,7 +115,7 @@
           <h5>Kepada Yth. Bapak/Ibu/Saudara(i)</h5>
           <h4><span>Bapak/Ibu/Saudara/i</span></h4>
           <h5>Di Tempat</h5>
-          <p>Kami Mohon maaf apabila terdapat kesalahan dalam penulisan nama atau gelar</p>
+          <p>Mohon maaf apabila terdapat kesalahan dalam penulisan nama atau gelar</p>
           
           
           <a href="#home" id="luffy-button" class="btn btn-lg mt-4" onClick="enableScroll()">
@@ -206,8 +206,8 @@
           
           <div class="simply-countdown mb-2"></div>
           <h3>02 Juni 2024 M/25 Dzulqaidah 1445 H</h3>
-          <a type="button" class="btn btn-pink" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=N3FzYm01NmtuYnY3ZXEyZTZlc29xZjB2a3Qgcm9oaW1leGNlbGxlbnQ1OTE4QG0&amp;tmsrc=rohimexcellent5918%40gmail.com"><i class="bi bi-bell"></i>Ingatkan Saya</a>
-        
+          <a type="button" class="btn btn-pink" target="_blank" href="https://calendar.app.google/FWsnNPdG8MzgpmgXA"><i class="bi bi-bell"></i>Ingatkan Saya</a>
+          
         </div>
         <div class="justify-content-center ayat mt-3">
           <div class="box text-center">
@@ -225,8 +225,8 @@
       </div>
 
       <div class="row pt-5">
-        <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir
-          pada acara pernikahan kami. </p>
+        <h3 class="text-center text-salam">Assalamu'alaikum Warahmatullah Wabarakatuh</h3>
+        <p class="text-center text-ridho">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaaAllah kami akan menyelenggarakan acara pernikahan anak kami :</p>
         <div class="col-left col-md-6 col-lg-6 col-sm-12">
           <div class="card">
             <span class="heart"><i class="bi bi-heart-fill"></i></span>
@@ -393,7 +393,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h3>Menetapkan Komitmen</h3>
-                  <span>28 Februari 2024</span>
+                  <span>18 Januari 2024</span>
                 </div>
                 <div class="timeline-body">
                   <p>
@@ -425,12 +425,12 @@
       </div>
 
       <div class="box">
-        <span style="--i:1"><img src="img/gallery/1.JPG"></span>
-        <span style="--i:2"><img src="img/gallery/2.JPG"></span>
-        <span style="--i:3"><img src="img/gallery/3.JPG"></span>
-        <span style="--i:4"><img src="img/gallery/4.JPG"></span>
-        <span style="--i:5"><img src="img/gallery/5.JPG"></span>
-        <span style="--i:6"><img src="img/gallery/6.JPG"></span>
+        <span style="--i:1"><img src="img/gallery/1.JPG" loading="lazy"></span>
+        <span style="--i:2"><img src="img/gallery/2.JPG" loading="lazy"></span>
+        <span style="--i:3"><img src="img/gallery/3.JPG" loading="lazy"></span>
+        <span style="--i:4"><img src="img/gallery/4.JPG" loading="lazy"></span>
+        <span style="--i:5"><img src="img/gallery/5.JPG" loading="lazy"></span>
+        <span style="--i:6"><img src="img/gallery/6.JPG" loading="lazy"></span>
     </div>
     </div>
   </section>
@@ -446,50 +446,82 @@
           <p>Konfirmasi kamu sangat berarti untuk suksesnya acara kami</p>
         </div>
       </div>
-      <div class="justify-content-center form mt-3 mx-auto">
-        <div class="box text-center">
+      <div class="form mt-3 mx-auto">
+        <div class="box">
           <form class="row row-cols-md-auto g-3 align-items-center justify-content-center p-3" method="POST" action="" id="my-form" onsubmit="saveFormData(event)">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">Jumlah</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-              </select>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="status" class="form-label">Konfirmasi</label>
+                <select name="status" id="status" class="form-select">
+                  <option selected>Pilih salah satu</option>
+                  <option value="Hadir">Hadir</option>
+                  <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary align-items-center"><i class="bi bi-send-plus"></i>Kirim</button>
-          </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <input type="text" class="form-control" id="pesan" name="pesan">
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary"><i class="bi bi-send-plus"></i>Kirim</button>
+            </div>
           </form>
-          <table border="1">
-            <tr>
-                <th>Nama</th>
-                <th>Jumlah</th>
-                <th>Status</th>
-            </tr>
-            <?php foreach ($data as $row): ?>
-                <tr>
-                    <td><?php echo $row['nama']; ?></td>
-                    <td><?php echo $row['jumlah']; ?></td>
-                    <td><?php echo $row['status']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-          </table>
-
+          <div class="chat_container">
+            <div class="job-box">
+              <div class="job-box-filter">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                  <label>Show 
+                  <select name="datatable_length" class="form-control input-sm">
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  </select>
+                  entries</label>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <div class="filter-search-box text-right">
+                      <label>Search:<input type="search" class="form-control input-sm" placeholder=""></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="inbox-message">
+                <ul>
+                  <li>
+                    <a href="#rsvp">
+                      <div class="message-avatar">
+                        <img src="img/HY.png" alt="">
+                      </div>
+                      <div class="message-body">
+                        <div class="message-body-heading">
+                          <h5>nama</h5>
+                          <span class="important">Tidak Hadir</span>
+                        </div>
+                        <p>pesan</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <script>
             function saveFormData(event) {
               event.preventDefault(); // Mencegah form untuk melakukan submit standar
@@ -497,6 +529,7 @@
               var nama = document.getElementById("nama").value;
               var jumlah = document.getElementById("jumlah").value;
               var status = document.getElementById("status").value;
+              var pesan = document.getElementById("pesan").value;
           
               // Kirim data form ke server menggunakan AJAX
               var xhr = new XMLHttpRequest();
@@ -506,10 +539,60 @@
                   if (xhr.readyState == 4 && xhr.status == 200) {
                       alert("Data berhasil disimpan!");
                       document.getElementById("my-form").reset(); // Mengosongkan form setelah data terkirim
+                      fetchData(); // Memuat ulang data setelah penyimpanan berhasil
                   }
               };
-              xhr.send("nama=" + nama + "&jumlah=" + jumlah + "&status=" + status);
+              xhr.send("nama=" + nama + "&jumlah=" + jumlah + "&status=" + status + "&pesan=" + pesan);
+            }
+            function fetchData() {
+              var xhr = new XMLHttpRequest();
+              xhr.open("GET", "fetch_data.php", true);
+              xhr.onreadystatechange = function() {
+                  if (xhr.readyState == 4 && xhr.status == 200) {
+                      var data = JSON.parse(xhr.responseText);
+                      var list = document.querySelector(".inbox-message ul");
+                      list.innerHTML = ""; // Mengosongkan list sebelum mengisi dengan data baru
+                      data.forEach(function(row) {
+                          var newItem = document.createElement("li");
+                          var link = document.createElement("a");
+                          var messageAvatar = document.createElement("div");
+                          var messageBody = document.createElement("div");
+                          var messageBodyHeading = document.createElement("div");
+                          var statusSpan = document.createElement("span");
+                          var pesanP = document.createElement("p");
+          
+                          newItem.appendChild(link);
+                          link.appendChild(messageAvatar);
+                          link.appendChild(messageBody);
+                          messageBody.appendChild(messageBodyHeading);
+                          messageBody.appendChild(pesanP);
+          
+                          newItem.classList.add("list-group-item");
+                          link.href = "#rsvp";
+                          messageAvatar.classList.add("message-avatar");
+                          messageBody.classList.add("message-body");
+                          messageBodyHeading.classList.add("message-body-heading");
+                          statusSpan.classList.add("important");
+          
+                          messageAvatar.innerHTML = '<img src="img/HY.png" alt="">';
+                          messageBodyHeading.innerHTML = '<h5>' + row.nama + '</h5>';
+                          if (row.status == "Hadir") {
+                              statusSpan.classList.add("badge", "bg-primary", "rounded-pill");
+                          } else if (row.status == "Tidak Hadir") {
+                              statusSpan.classList.add("badge", "bg-danger", "rounded-pill");
+                          }
+                          statusSpan.textContent = row.status;
+                          pesanP.textContent = row.pesan;
+          
+                          messageBodyHeading.appendChild(statusSpan);
+                          list.appendChild(newItem);
+                      });
+                  }
+              };
+              xhr.send();
           }
+          
+            fetchData(); // Memuat data saat halaman pertama kali dimuat
           </script>
         </div>
       </div>
