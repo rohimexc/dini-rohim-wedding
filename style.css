@@ -1792,16 +1792,18 @@ footer .tm .tm-frame {
 footer .tm .tm-d{
   position: absolute;
   bottom: 30%;
-  left: 30%;
+  left: 40%;
   z-index: 1;
   width: 5%;
   height: auto;
-  animation: pulsate 2s infinite;
+  visibility: visible;
 }
+
+
 footer .tm .tm-l{
   position: absolute;
-  bottom: 25%;
-  left: 35%;
+  bottom: 30%;
+  left: 45%;
   z-index: 1;
   width: 5%;
   height: auto;
@@ -1810,12 +1812,12 @@ footer .tm .tm-l{
 
 footer .tm .tm-r{
   position: absolute;
-  bottom: 20%;
-  left: 40%;
+  bottom: 30%;
+  left: 50%;
   z-index: 1;
   width: 5%;
   height: auto;
-  animation: pulsate 2s infinite;
+
 }
 
 @keyframes turutMengundang {
