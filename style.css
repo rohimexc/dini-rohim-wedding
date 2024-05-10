@@ -1746,81 +1746,137 @@ background:#2196f3;
   border: 1px solid white;
 }
 
-footer{
+
+footer .tm{
   position: relative;
+  padding-top: 10rem;
+}
+
+footer .tm .tm-left{
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  z-index: 1;
+  width: 45%;
+  height: auto;
+}
+footer .tm .tm-right{
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+  z-index: 1;
+  width: 45%;
+  height: auto;
+}
+footer .tm .tm-center{
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
+}
+
+footer .tm .tm-frame {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  z-index: 1;
+  max-width: 95%;
+  min-width: 52rem;
+  height: auto;
+
+}
+footer .tm .tm-d{
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  z-index: 1;
+  width: 5%;
+  height: auto;
+  animation: pulsate 2s infinite;
+}
+footer .tm .tm-l{
+  position: absolute;
+  bottom: 25%;
+  left: 35%;
+  z-index: 1;
+  width: 5%;
+  height: auto;
+  animation: pulsate 0.5s infinite;
+}
+
+footer .tm .tm-r{
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  z-index: 1;
+  width: 5%;
+  height: auto;
+  animation: pulsate 2s infinite;
+}
+
+@keyframes turutMengundang {
+  0%, 100% {
+    transform: rotate(1deg) translate(-50%, -15%);
+  }
+  50% {
+    transform: rotate(-1deg) translate(-50%, -15%);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+footer .tm h2{
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left:50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  font-family: 'Sacramento', cursive;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #f14e95;
+}
+footer .tm ul{
+  position: absolute;
+  text-align: center;
+  top:25%;
+  left:50%;
+  z-index: 3;
+  transform: translateX(-50%);
+}
+footer .tm ul li{
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
 }
 
 footer .footer{
-  padding: 3rem;
   color: white;
   background-color: var(--pink);
+  
 }
 
-footer .sakura-bottom img {
-  position: absolute;
-  bottom: 11.6rem;
-  left: 10px;
-  z-index: 1;
-  max-width: 100%;
-  min-width: 350px;
-  height: auto;
-  animation: sakuraBottom 1s linear forwards;
+footer .footer marquee{
+  margin-top: 1rem;
+  z-index: 1000;
+  background-color: rgba(252, 85, 182,0.5);
 }
 
-@keyframes sakuraBottom {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Menambahkan animasi shake setelah animasi sakuraBottom selesai */
-footer .sakura-bottom img {
-  animation: sakuraBottom 1s linear forwards, shake 0.5s ease-in-out infinite;
-}
-
-@keyframes shake {
-  0%, 100% {
-    transform: translateX(-3px) rotateY(5deg);
-  }
-  50% {
-    transform: translateX(3px) rotateY(-5deg);
-  }
-}
-
-footer img.depan{
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  height: auto;
-  width: 70%;
-  margin-bottom: 6rem;
-  position: relative;
-}
-footer img.belakang{
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  height: auto;
-  width: 70%;
-  margin-bottom: 6rem;
-  position: absolute;
-
-  animation: wedding 2s ease-in-out infinite;
-}
-
-@keyframes wedding{
-  0%,100%{
-    transform: rotate(3deg);
-  }
-  50% {
-    transform: rotate(-3deg);
-  }
-}
 
 footer a {
   color: var(--bg);
