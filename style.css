@@ -1798,16 +1798,18 @@ footer .tm .tm-frame {
   left: 50%;
   transform: translate(-50%, -15%);
   z-index: 1;
-  max-width: 90%;
+  max-width: 100%;
+  min-width: 55rem;
   height: auto;
 
 }
 footer .tm .tm-d{
   position: absolute;
-  bottom: 30%;
-  left: 40%;
+  bottom: 25%;
+  left: 42%;
   z-index: 1;
-  width: 5%;
+  min-width: 4%;
+  max-width:2rem;
   height: auto;
 
 }
@@ -1815,20 +1817,22 @@ footer .tm .tm-d{
 
 footer .tm .tm-l{
   position: absolute;
-  bottom: 30%;
-  left: 45%;
+  bottom: 25%;
+  left: 47%;
   z-index: 1;
-  width: 5%;
+  min-width: 4%;
+  max-width:2rem;
   height: auto;
   animation: pulsate 0.5s infinite;
 }
 
 footer .tm .tm-r{
   position: absolute;
-  bottom: 30%;
-  left: 50%;
+  bottom: 25%;
+  left: 51.5%;
   z-index: 1;
-  width: 5%;
+  min-width: 4%;
+  max-width:2rem;
   height: auto;
 
 }
