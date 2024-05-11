@@ -410,6 +410,30 @@
       </div>
     </div>
   </section>
+  <section id="filter" class="filter">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <h2 class="text-center">Filter</h2>
+        <div class="card border-pink text-center" onclick="window.location.href = 'https://www.instagram.com/'">
+        </div>
+      </div>
+      <script>
+        const images = [
+          'img/filter-image-1.png',
+          'img/filter-image-2.png',
+          'img/filter-image-3.png'
+        ];
+
+        let currentIndex = 0;
+        const card = document.querySelector('.filter .card');
+
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          card.style.backgroundImage = `url('${images[currentIndex]}')`;
+        }, 2000);
+      </script>
+    </div>
+  </section>
 
   <section id="gallery" class="gallery">
     <img src="img/sakura-left.png" class="kiri-atas" alt="">

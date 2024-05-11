@@ -307,7 +307,7 @@ body {
   padding-top: 15rem;
 
 }
-.info, .story, .gifts, .home, .rsvp, .gallery, footer{
+.info, .story, .gifts, .home, .rsvp, .gallery, .filter, footer{
   background-image: url(img/bg-2.png);
   background-size: cover;
   background-position: center;
@@ -327,7 +327,8 @@ body {
 .story h2,
 .gallery h2,
 .rsvp h2,
-.gifts h2 {
+.gifts h2,
+.filter h2 {
   color: var(--pink);
   font-family: 'Sacramento';
   font-size: 5rem;
@@ -1371,7 +1372,33 @@ body {
   right: auto;
 
 }
+.filter{
+  padding-top: 10rem;
+}
 
+.filter .card{
+  padding: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 10px;
+  height: 50rem;
+  width: 90%;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(255,255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(255,255, 255, 0.5);
+  border-radius: 15px;
+  background-image: url('img/filter-image-1.png');
+  background-position: center;
+  background-size: contain;
+  transition: background-image 0.5s ease;
+}
+.filter i.icon-filter{
+  color: var(--pink);
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
 
 .gallery a img{
   border: 2px solid white;
