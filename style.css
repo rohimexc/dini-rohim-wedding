@@ -1201,7 +1201,7 @@ body {
 }
 
 .gifts img.kiri-atas{
-  top: 0;
+  top: 10%;
   left: 0;
   z-index: 2;
   height: auto;
@@ -1212,7 +1212,7 @@ body {
 
 
 .gifts img.kanan-atas{
-  top: 0;
+  top: 10%;
   right: 0;
   z-index: 2;
   height: auto;
@@ -1374,6 +1374,36 @@ body {
 }
 .filter{
   padding-top: 10rem;
+  position: relative;
+}
+
+.filter img.kiri-atas{
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: auto;
+  max-width: 170px;
+  min-width: 30%;
+  position: absolute;
+}
+
+.filter img.kanan-atas{
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: auto;
+  max-width: 170px;
+  min-width: 30%;
+  position: absolute;
+  
+}
+.filter img.kanan-atas{
+  animation: goyangRight 2s ease-in-out infinite;
+}
+
+
+.filter img.kiri-atas{
+  animation: goyangLeft 2s ease-in-out infinite;
 }
 
 .filter .card{
@@ -1893,7 +1923,7 @@ footer .tm h2{
   z-index: 3;
   transform: translateX(-50%);
   font-family: 'Sacramento', cursive;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   font-weight: bold;
   color: #f14e95;
 }
@@ -1910,7 +1940,7 @@ footer ul.square{
 footer .tm ul li{
   display: flex;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
 }
 
