@@ -1862,7 +1862,7 @@ footer .tm .tm-frame {
 }
 footer .tm .tm-d{
   position: absolute;
-  bottom: 25%;
+  bottom: 22%;
   left: 42%;
   z-index: 1;
   min-width: 4%;
@@ -1874,7 +1874,7 @@ footer .tm .tm-d{
 
 footer .tm .tm-l{
   position: absolute;
-  bottom: 25%;
+  bottom: 22%;
   left: 47%;
   z-index: 1;
   min-width: 4%;
@@ -1885,7 +1885,7 @@ footer .tm .tm-l{
 
 footer .tm .tm-r{
   position: absolute;
-  bottom: 25%;
+  bottom: 22%;
   left: 51.5%;
   z-index: 1;
   min-width: 4%;
@@ -1947,14 +1947,10 @@ footer .tm ul li{
 footer .footer{
   color: white;
   background-color: var(--pink);
-  
+  padding-bottom: 40pt;
 }
 
-footer .footer marquee{
-  margin-top: 1rem;
-  z-index: 1000;
-  background-color: rgba(252, 85, 182,0.5);
-}
+
 
 
 footer a {
